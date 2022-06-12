@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT TRYOUT</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "paragraph changed.";
+        }
+    </script> 
+</head>
+<body>
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script src="first.js"></script>
+    <script src="myScript.js"></script>
+    <script>
+        document.getElementById("demo").innerHTML = "My first javascript";
+    </script>
+    <h2>what can javascript do?</h2>
+    <p id="demo">A paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p>(myFunction is stored in an external file called "myScript.js")</p>
+    <p id="demo">javascript can change html content</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "hello my name is Alagwu Chukwuzurum!"'>Click Me!</button>
+    <p>in this case javascript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">turn off the light</button>
+    <p><button type="button" onclick='document.getElementById("demo").innerHTML = "javascript can html content!"'>Click me to change back!</button></p>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+    <p id="demo" style="display:none">hello my name is Alagwu Chukwuzurum</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+    <p id="demo">My first paragraph</p>
+    <script>
+        document.getElementById("demo").innerHTML = 25 * 4;
+    </script>
+    <p>A <b>Javascript program</b> is a list of <b>statements</b>to be executed by a computer.</p>
+    <script>
+        var x, y, z; //statement 1
+        x = 25; //statement 2
+        y = 4; //statement 3
+        z = x + y; //statement 4
+        document.getElementById("demo").innerHTML = "The value of z is " + z + ".";
+    </script>
+    
+</body>
+</html>
