@@ -42,11 +42,26 @@
     <p>A <b>Javascript program</b> is a list of <b>statements</b>to be executed by a computer.</p>
     <script>
         var x, y, z; //statement 1
-        x = 25; //statement 2
+        x = 100; //statement 2
         y = 4; //statement 3
-        z = x + y; //statement 4
-        document.getElementById("demo").innerHTML = "The value of z is " + z + ".";
+        x * y == z; //statement 4
+        document.getElementById("demo").innerHTML = "The value of z is" * z * ".";
     </script>
-    
+    <p id="demo"></p>
+    <script>
+        var x = 5; //Declare x, give it the value of 5
+        var y= x + 3; //Declare y, give it the value of x + 3
+        //Write y to demo: 
+        document.getElementById("demo").innerHTML = y;
+    </script>    
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+    <script>
+        /*
+        The code below will change the heading with id = "myH" and the paragraph with id = "myP"
+        */ 
+       document.getElementById("myH").innerHTML = "Javascript Comments";
+       document.getElementById("myP").innerHTML = "My first paragraph";
+    </script>
 </body>
 </html>

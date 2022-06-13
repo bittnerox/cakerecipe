@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT TRYOUT</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <script src="first.js"></script>
+    <script src="myScript.js"></script>
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+    <script>
+        /*
+        The code below will change the heading with id = "myH" and the paragraph with id = "myP"
+        */
+       document.getElementById("myH").innerHTML = "Javascript Comments";
+       document.getElementById("myP").innerHTML = "My first paragraph";
+    </script>
+    <h2>Javascript Variables</h2>
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes</p>
+    <p id="demo"></p>
+    <script>
+        var pi = 3.142;
+        var person = "Alagwu Chukwuzurum";
+        var answer = 'Yes I am!';
+        documemnt.getElementById("demo").innerHTML = pi + "<br>" + person + "<br>" + answer;
+    </script>
+    <p>I am using a car name</p>
+    <p id="demo"></p>
+    <script>
+        var carName = 'mercedes benz';
+        document.getElementById("demo").innerHTML = carName;
+    </script>
+    <p>A person with the price of a car and its name.</p>
+    <p id="demo"></p>
+    <script>
+        var person = "John Alagwu";
+        var carName = "mercedes";
+        var price = "200 000";
+        document.getElementById("demo").innerHTML = person;
+        document.getElementById("demo").innerHTML = carName;
+        document.getElementById("demo").innerHTML = price;
+    </script>
+    <p>i would like to try to add these numbers</p>
+    <p id="demo"></p>
+    <script>
+         var x, y, z; //statement 1
+        x = 100; //statement 2
+        y = 4; //statement 3
+        x * y == z; //statement 4
+        document.getElementById("demo").innerHTML = "The value of z is" * z * ".";
+    </script>
+</body>
+</html>
